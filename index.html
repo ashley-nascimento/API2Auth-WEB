@@ -1,0 +1,199 @@
+<html lang="pt-br">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>API2Auth</title>
+    
+    <!-- links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.9.0/tachyons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- links -->
+
+    </head>
+    <body>
+        
+    <!-- navbar -->
+    <header class="bg-white pv3 bb b--black-10 fixed top-0 left-0 right-0" style="z-index:10;">
+        <div class="w-90 mw8 center flex justify-between items-center">
+            
+            <div><img src="images/api.png" style="margin:0 3px 0 8px; padding:0 8px;"></div>
+
+            <ul class="list mv0 pl0 flex items-center gs">
+                <li class="dn dib-l mr4">
+                    <a class="color-inherit dim pv2" href="">Iniciar</a>
+                </li>
+                <li class="dn dib-l mr4">
+                    <a class="color-inherit dim pv2" href="">Documentação</a>
+                </li>
+                <li class="dn dib-l mr4">
+                    <a class="color-inherit dim pv2" href="">Preço</a>
+                </li>
+                    <li class="dib">
+                        <button class="btn btn-primary br2 blue-button db dim mw3 mw5-l ph3 pv2 truncate white" href="#">Obter chave da API</button>
+                    </li>
+                <li class="dn-l dib ml3">
+                    <button id="open-menu-btn" class="color-inherit bn bg-white db f2 ph1 pv0">
+                        <i class="fa fa-bars"></i>
+                    </button>   
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- navbar -->
+
+    <!-- imagem de fundo -->
+    <div style="background-image:url(images/background.png); background-repeat:no-repeat; background-position-y:220px; background-size: 600px;">
+    <!-- imagem de fundo -->
+
+    <!-- descrição principal da página -->
+    <div class="center mw7 mt5-l pt6 pb5 tc w-90">
+        <h2 class="f2 mt0 mb2 fw5 typed-cursor lh-title black-90">Faça Login com rapidez e segurança</h2>
+        <h3 class="fw4 f3 mv4 black-60 lh-copy">Obtenha um login mais seguro com a utilização do QR Code como autenticação de dois fatores.</h3>
+        <button class="btn btn-primary br2 blue-button dim mw5-l ph3 pv2 truncate white pb4" href="">Obter chave da API</button>
+    </div>
+    <!-- descrição principal da página -->
+
+    <!-- carrossel de imagens -->
+    <div class="pt5 ml5 mr5">
+        <div id="carouselExampleIndicators" class="pt4 carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/1.jpg" alt="Primeiro Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>EXEMPLO</h5>
+                    <p>Exemplo</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/1.jpg" alt="Primeiro Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>EXEMPLO</h5>
+                    <p>Exemplo</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/1.jpg" alt="Primeiro Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>EXEMPLO</h5>
+                    <p>Exemplo</p>
+                </div>
+            </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+        </div>
+    <!-- carrossel de imagens -->
+
+    <!-- vantagens de usar a API -->
+    <div class="pv5 ba-l bb bt bg-na-grey-1 b--black-10 center-l mv5">
+        <p class="mw7 w-80 mb5 center tc lh-copy f4"><strong class="black-90">API2Auth</strong> é uma API simples e fácil de usar....</p>
+      </div>
+    <!-- vantagens de usar a API -->
+
+    <!-- desenvolvedores -->
+    <div class="mb4 mt5 tc mt4-l">
+        <h2 class="mb4 f2 fw5 lh-copy users-header">Desenvolvido por</h2>
+    </div>
+    <!-- desenvolvedores -->
+
+    <!-- citação -->
+    <div class="pv3 ba-l bb bt bg-na-grey-1 b--black-10 center-l flex-l justify-center mv5">
+        <div class="br2 bg-white ma3 mw6 pa3 w-40-l" style="box-shadow:0 0 10px rgba(0,0,0,0.1)">
+          <p class="lh-copy mt0">"Exemplo"</p>
+        </div>
+      </div>
+    <!-- citação -->
+
+    <!-- botão branco -->
+    <div class="blue-button pv3 tc">
+        <a class="btn btn-light f4 dib ba ph4 pv3 grow blue-color bg-white" href="#">Obter chave da API</a>
+    </div>
+    <!-- botão branco -->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small footer-color pt-4">
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+    
+        <!-- Grid row -->
+        <div class="row">
+            <hr class="clearfix w-100 d-md-none pb-3">
+    
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase white">Links</h5>
+    
+            <ul class="list-unstyled white">
+                <li>
+                <a class="white" href="#!">Link 1</a>
+                </li>
+                <li>
+                    <a class="white" href="#!">Link 2</a>
+                </li>
+                <li>
+                    <a class="white" href="#!">Link 3</a>
+                </li>
+                <li>
+                    <a class="white" href="#!">Link 4</a>
+                </li>
+            </ul>
+            </div>
+            <!-- Links -->
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase white">Links</h5>
+    
+            <ul class="list-unstyled">
+                <li>
+                <a class="white" href="#!">Link 1</a>
+                </li>
+            </ul>
+    
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+
+                <!-- Content -->
+                <h5 class="text-uppercase white">Footer Content</h5>
+                <p class="white">Here you can use rows and columns to organize your footer content.</p>
+        
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+    
+        </div>
+        <!-- Footer Links -->
+    
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 white footer-cc">© 2020 Copyright
+        </div>
+        <!-- Copyright -->
+    
+    </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>
