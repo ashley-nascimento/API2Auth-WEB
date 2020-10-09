@@ -1,0 +1,158 @@
+<html lang="pt-br">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Conta - API2Auth</title>
+    
+    <!-- links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.9.0/tachyons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-jsonview/1.2.3/jquery.jsonview.min.css">
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- links -->
+
+    </head>
+    <body>
+
+    <!-- Botão voltar para o inicio-->
+    <nav class="flex justify-between">
+    <div>
+        <a class="d-flex blue-s-color pa3" href="#">‹ Voltar para o início</a>
+        
+    </div>
+    <!-- Botão voltar para o inicio-->
+    <div>
+     <!-- Botão sair-->   
+    <form action="#" method="post">            
+    <button type="submit" class="btn btn-primary blue-button mr2 mt2 ladda-button" data-style="slide-left">Sair</button>
+    </form>    
+    <!-- Botão sair-->
+    </div>
+    </nav>
+
+    <!-- Formulário-->
+    <div class="w-third-l mw6-l center-l ph3 pb6">
+        <h1 class="text-center f2 fw3 blue-color pt5">CONTA</h1>
+        <div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
+            </ul></div>
+                <form action="#" method="post">        
+                <div class="form-group">
+                <label for="Email">E-mail</label>
+                <input class="form-control" id="Email" name="Email" placeholder="email@email.com" disabled style="background-color: white;">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-light shadow-sm rounded cinza"><span>Atualize seu endereço de e-mail</span></button>
+                </div>
+                <div class="form-group">
+                    <label>Senha</label>
+                    <div>
+                    <button type="submit" class="btn btn-light shadow-sm rounded pt2 cinza"><span>Mudar senha</span></button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Chave da API</label>
+                    <input class="form-control" id="Nome" name="Nome" placeholder="0101010101010101010101" disabled style="background-color: white;">
+                </div>
+                <div class="form-group">
+                    <label>Inscrição</label>
+                    <div class="cinza">Plano: Desenvolvedor</div>
+
+                    <div class="alert alert-info" style="border-color: steelblue; background-color: #E6F4FF;">
+                        <p>Você só deve usar o plano de desenvolvedor se o seu projeto estiver em desenvolvimento.</p>
+                        <p>No momento apenas o plano desenvolvedor está disponível.</p>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-light shadow-sm rounded pt2 cinza" disabled><span>Gerenciar assinatura</span></button>
+                    </div>
+                </div>
+            </form> 
+            <h1 class="text-center f2 fw3 blue-color pt3">USO</h1>   
+            <div class="form-group">
+                <label>Pedidos restantes neste período</label>
+                <div>
+                    <label class="cinza">Ainda não implementado</label>
+                </div>
+                <div>
+                    <label class="pt4">Histórico de uso</label>
+                </div>
+                
+                    <!-- Gráfico-->
+
+                    <canvas id="myChart" width="413" height="206" style="display: block; height: 188px; width: 376px;"></canvas>
+
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+                    <script>
+                    var chartColors = {
+                        blue: 'rgb(0, 77, 139)'
+                    };
+
+                    var ctx = document.getElementById('myChart').getContext('2d');
+                    var myChart = new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            labels: [],
+                            datasets: [{
+                                label: "Pedidos feitos",
+                                borderColor: chartColors.blue,
+                                backgroundColor: chartColors.blue,
+                                data: [],
+                                fill: false,
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            tooltips: {
+                                mode: 'index',
+                                intersect: false,
+                            },
+                            hover: {
+                                mode: 'index',
+                                intersect: false
+                            },
+                            scales: {
+                                yAxes: [{
+                                    ticks: {
+                                        beginAtZero: true
+                                    }
+                                }],
+                                xAxes: [{
+                                    ticks: {
+                                        autoSkip: false
+                                    }
+                                }]
+                            }
+                        }
+                    });
+                    </script>
+                                        
+                    <!-- Gráfico-->         
+        </div>
+        <table class="table table-borderless bg-light">
+            <thead>
+              <tr>
+                <th scope="col" class="cinza" style="font-weight:normal">Data</th>
+                <th scope="col" class="cinza" style="font-weight:normal">Solicitação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" style="font-weight:normal">01/01/2000</th>
+              </tr>
+
+              <tr>
+                <th scope="row"></th>
+              </tr>
+
+            </tbody>
+          </table>
+
+    <!-- Formulário-->
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>
