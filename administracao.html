@@ -1,0 +1,114 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Conta - API2Auth</title>
+        
+        <!-- links -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.9.0/tachyons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-jsonview/1.2.3/jquery.jsonview.min.css">
+        <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- links -->
+
+        <!--Favicons-->
+        <link rel="shortcut icon" href="images/icon.png">
+        <link rel="icon" type="image/png" sizes="196x196" href="images/icon.png">
+        <!--Favicons-->
+
+    </head>
+
+    <body>
+
+        <!-- Botão voltar para o inicio-->
+        <div>
+            <a class="d-flex blue-s-color pa3" href="index.html">‹ Visualizar site</a>
+        </div>
+        <!-- Botão voltar para o inicio-->
+
+        <div class="center-l ph3 pb6" style="width: 60%;">
+            <!-- Grafico form-->
+            <h1 class="text-center f2 fw3 blue-color pt3">CONTROLE DE USUÁRIOS</h1>   
+            <div class="form-group">
+                <div>
+                    <label class="pt4">Histórico de uso</label>
+                </div>
+                
+                <!-- Gráfico-->
+                <canvas id="myChart" width="413" height="206" style="display: block; height: 188px; width: 376px;"></canvas>
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+                <script>
+                var chartColors = {
+                    blue: 'rgb(0, 77, 139)'
+                    };
+
+                var ctx = document.getElementById('myChart').getContext('2d');
+                var myChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: [],
+                        datasets: [{
+                            label: "Pedidos feitos",
+                            borderColor: chartColors.blue,
+                            backgroundColor: chartColors.blue,
+                            data: [],
+                            fill: false,
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        tooltips: {
+                            mode: 'index',
+                            intersect: false,
+                        },
+                        hover: {
+                            mode: 'index',
+                            intersect: false
+                        },
+                        scales: {
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero: true
+                                }
+                            }],
+                            xAxes: [{
+                                ticks: {
+                                    autoSkip: false
+                                }
+                            }]
+                        }
+                    }
+                });
+                </script>
+                <!-- Gráfico-->         
+        </div>
+        <!-- Grafico form-->
+
+        <!-- Tabela-->
+        <table class="table table-borderless bg-light">
+            <thead>
+                <tr>
+                    <th scope="col" class="cinza" style="font-weight:normal">ID</th>
+                    <th scope="col" class="cinza" style="font-weight:normal">Usuário</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row" style="font-weight:normal">01</th>
+                </tr>
+
+                <tr>
+                    <th scope="row"></th>
+                </tr>
+            </tbody>
+        </table>
+        <!-- Tabela-->
+
+    </body>
+</html>
+        
