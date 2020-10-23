@@ -1,133 +1,144 @@
-<html>
-<head>
-    <title>Login - API2Auth</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.9.0/tachyons.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+            <title>Registro - API2Auth</title>
 
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+            <!-- links -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.9.0/tachyons.min.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+            <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+            <!-- links -->
 
-    <!-- recaptcha-->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-        <script type="text/javascript">
-      var onloadCallback = function() {
-        grecaptcha.render('html_element', {
-          'sitekey' : 'your_site_key'
-        });
-      };
-    </script>
-     <!-- recaptcha-->
-
-</head>
-<body>
-    <!-- Botão voltar para o inicio-->
-    <div>
-        <a class="d-flex blue-s-color no-underline na-blue dib pa3" href="#">Voltar para o início</a>
-    </div>
-    <!-- Botão voltar para o inicio-->
-
-    <!-- Formulário-->
-
-<div class="w-third-l mw6-l center-l ph3 pb6">
-    <h1 class="text-center f2 fw3 blue-color pt5">REGISTRE-SE</h1>
-    <div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
-        </ul></div>
-            <form action="#" method="post">        
-            <div class="form-group">
-            <label for="Email">Primeiro nome</label>
-            <input class="form-control" data-val="true" data-val-required="Por favor, insira seu nome." id="Nome" name="Nome" placeholder="Nome" required="required" value="">
-            </div>
-            <div class="form-group">
-                <label for="Email">Endereço de e-mail</label>
-                <input class="form-control" data-val="true" data-val-required="Por favor, insira seu endereço de e-mail." id="Email" name="Email" placeholder="Email" required="required" type="email" value="">
-                </div>
-            <p class="text-center cinza">Os endereços de e-mail serão verificados, insira um verdadeiro (e não descartável).</p>
-            </p>
+            <!--Favicons-->
+            <link rel="shortcut icon" href="images/icon.png">
+            <link rel="icon" type="image/png" sizes="196x196" href="images/icon.png">
+            <!--Favicons-->
             
-            <div class="form-group">
-                <label for="Password_Value">Senha</label>
-                <div class="flex">
-                    <input class="form-control" data-val="true" data-val-minlength="Sua senha deve ter pelo menos 8 caracteres. Segurança primeiro!" data-val-minlength-min="8" data-val-required="Por favor, insira uma senha." id="Password_Value" minlength="8" name="Password.Value" placeholder="Senha" required="required" type="password">
-                    <button id="showPasswordBtn" class="btn btn-default black-60 bg-light" data-show-password="false" type="button"><i class="fa fa-eye"></i><i class="fa fa-eye-slash"></i></button>
-                </div>
-            </div>
-            <script>
-                    $(document).ready(function () {
-                        var showPasswordBtn = $('#showPasswordBtn');
-                        var password = $('#Password_Value');
-                        showPasswordBtn.click(function () {
-                            if (showPasswordBtn.attr('data-show-password') === 'false') {
-                                password.prop('type', 'text');
-                                showPasswordBtn.attr('data-show-password', 'true');
-                            } else {
-                                password.prop('type', 'password');
-                                showPasswordBtn.attr('data-show-password', 'false');
-                            }
-                        })
-                    })
+
+            <!-- recaptcha-->
+            <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+                <script type="text/javascript">
+            var onloadCallback = function() {
+                grecaptcha.render('html_element', {
+                'sitekey' : 'your_site_key'
+                });
+            };
             </script>
-            <style>
-                #showPasswordBtn {
-                    margin-left: 4px;
-                    position: relative;
-                    top: -1px;
-                }
-    
-                    #showPasswordBtn[data-show-password=false] .fa-eye-slash {
-                        display: none;
+            <!-- recaptcha-->
+
+    </head>
+    <body>
+
+        <!-- Botão voltar para o inicio-->
+        <div>
+            <a class="d-flex blue-s-color pa3" href="index.html">‹ Voltar para o início</a>
+        </div>
+        <!-- Botão voltar para o inicio-->
+
+        <!-- Formulário-->
+        <div class="w-third-l mw6-l center-l ph3 pb6">
+            <h1 class="text-center f2 fw3 blue-color pt5">REGISTRE-SE</h1>
+            <div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
+                </ul></div>
+                    <form action="#" method="post">        
+                    <div class="form-group">
+                    <label for="Email">Primeiro nome</label>
+                    <input class="form-control" data-val="true" data-val-required="Por favor, insira seu nome." id="Nome" name="Nome" placeholder="Nome" required="required" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">Endereço de e-mail</label>
+                        <input class="form-control" data-val="true" data-val-required="Por favor, insira seu endereço de e-mail." id="Email" name="Email" placeholder="Email" required="required" type="email" value="">
+                        </div>
+                    <p class="text-center cinza">Os endereços de e-mail serão verificados, insira um verdadeiro (e não descartável).</p>
+                    </p>
+                    
+                    <div class="form-group">
+                        <label for="Password_Value">Senha</label>
+                        <div class="flex">
+                            <input class="form-control" data-val="true" data-val-minlength="Sua senha deve ter pelo menos 8 caracteres. Segurança primeiro!" data-val-minlength-min="8" data-val-required="Por favor, insira uma senha." id="Password_Value" minlength="8" name="Password.Value" placeholder="Senha" required="required" type="password">
+                            <button id="showPasswordBtn" class="btn btn-default black-60 bg-light" data-show-password="false" type="button"><i class="fa fa-eye"></i><i class="fa fa-eye-slash"></i></button>
+                        </div>
+                    </div>
+                <script>
+                        $(document).ready(function () {
+                            var showPasswordBtn = $('#showPasswordBtn');
+                            var password = $('#Password_Value');
+                            showPasswordBtn.click(function () {
+                                if (showPasswordBtn.attr('data-show-password') === 'false') {
+                                    password.prop('type', 'text');
+                                    showPasswordBtn.attr('data-show-password', 'true');
+                                } else {
+                                    password.prop('type', 'password');
+                                    showPasswordBtn.attr('data-show-password', 'false');
+                                }
+                            })
+                        })
+                </script>
+
+                <style>
+                    #showPasswordBtn {
+                        margin-left: 4px;
+                        position: relative;
+                        top: -1px;
                     }
-    
-                    #showPasswordBtn[data-show-password=false] .fa-eye {
-                        display: block;
-                    }
-    
-                    #showPasswordBtn[data-show-password=true] .fa-eye-slash {
-                        display: block;
-                    }
-    
-                    #showPasswordBtn[data-show-password=true] .fa-eye {
-                        display: none;
-                    }
-            </style>
-            <label>Você é...</label>
-            <div class="radio-group border rounded">
-                <div class="radio">
-                    <label class="cinza pl4" style="padding-top: 1.5rem;">
-                        <input checked="checked" class="entityTypeRadioBtn blue-s-color" data-val="true" data-val-required="The EntityType field is required." id="EntityTypeIndividual" name="EntityType" type="radio" value="Individual"> Um indivíduo <a class="fas fa-user-alt cinza"></a>
+        
+                        #showPasswordBtn[data-show-password=false] .fa-eye-slash {
+                            display: none;
+                        }
+        
+                        #showPasswordBtn[data-show-password=false] .fa-eye {
+                            display: block;
+                        }
+        
+                        #showPasswordBtn[data-show-password=true] .fa-eye-slash {
+                            display: block;
+                        }
+        
+                        #showPasswordBtn[data-show-password=true] .fa-eye {
+                            display: none;
+                        }
+                </style>
+                <!-- Botão ocultar/mostrar senha-->
+
+                <label>Você é...</label>
+                <div class="radio-group border rounded">
+                    <div class="radio">
+                        <label class="cinza pl4" style="padding-top: 1.5rem;">
+                            <input checked="checked" class="entityTypeRadioBtn blue-s-color" data-val="true" data-val-required="O campo de tipo de entidade é obrigatório." id="EntidadeIndividuo" name="TipoEntidade" type="radio" value="Individuo"> Um indivíduo <a class="fas fa-user-alt cinza"></a>
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="radio">
+                        <label class="cinza pl4 pb2 pr5">
+                            <input class="entityTypeRadioBtn" id="EntidadeEmpresa" name="TipoEntidade" type="radio" value="Empresa"> Uma empresa ou trabalho em nome de uma empresa <a class="fas fa-building cinza"></a>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- recaptcha-->
+                <!--Adicionar a chave do site no "data-sitekey"-->
+                <div class="pt3 pb3 g-recaptcha" style="width: 302px; margin: auto;" data-sitekey="ADICIONAR A CHAVE AQUI"></div>
+                <!-- recaptcha-->
+
+                <div class="checkbox text-center pb3">
+                    <label>
+                        <input data-val="true" data-val-regex="Por favor, aceite os termos de uso." data-val-regex-pattern="True" data-val-required="Aceitar o termos é obrigatório." id="TermoAceito" name="TermoAceito" required="required" type="checkbox" value="true"><input name="TermoAceito" type="hidden" value="false"> Eu li e concordo com os <a href="erro.html" target="_blank">termos de uso</a>.
                     </label>
                 </div>
-                <hr>
-                <div class="radio">
-                    <label class="cinza pl4 pb2 pr5">
-                        <input class="entityTypeRadioBtn" id="EntityTypeBusiness" name="EntityType" type="radio" value="Business"> Uma empresa ou trabalho em nome de uma empresa <a class="fas fa-building cinza"></a>
-                    </label>
+
+                <div>
+                    <button type="submit"class="btn btn-primary btn-block blue-button">Registrar</button>
                 </div>
-            </div>
-
-        <!-- recaptcha-->
-            <div class="pt3 pb3 g-recaptcha" style="width: 302px; margin: auto;" data-sitekey="your_site_key"></div>
-        <!-- recaptcha-->
-
-
-            <div class="checkbox text-center pb3">
-                <label>
-                    <input data-val="true" data-val-regex="Por favor, aceite os termos de uso." data-val-regex-pattern="True" data-val-required="The HasAcceptedTerms field is required." id="HasAcceptedTerms" name="HasAcceptedTerms" required="required" type="checkbox" value="true"><input name="HasAcceptedTerms" type="hidden" value="false"> Eu li e concordo com os <a href="/terms" target="_blank">termos de uso</a>.
-                </label>
-            </div>
-
-            <div>
-                <button type="submit"class="btn btn-primary btn-block blue-button">Registrar</button>
-            </div>
-        </form>    
-</div>
-
-  <!-- Formulário-->
+            </form>    
+        </div>
+        <!-- Formulário-->
 
         <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"async defer></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
